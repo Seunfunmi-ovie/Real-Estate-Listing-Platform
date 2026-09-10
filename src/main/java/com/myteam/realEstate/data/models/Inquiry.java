@@ -1,10 +1,14 @@
 package com.myteam.realEstate.data.models;
 
 import jakarta.persistence.*;
-import lombok.Data;
+
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "inquiries")
-@Data
+@Getter
+@Setter
 public class Inquiry {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
