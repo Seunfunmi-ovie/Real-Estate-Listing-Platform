@@ -8,9 +8,7 @@ import java.util.UUID;
 
 @Data
 public class RegisterPropertyResponse {
-        @id
-        @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private int id;
     private String message;
 
 

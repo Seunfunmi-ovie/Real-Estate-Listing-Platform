@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Property {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
@@ -18,6 +19,7 @@ public class Property {
     private User owner;
     private String title;
     private double price;
+    private String description;
     private boolean available;
 
 }
