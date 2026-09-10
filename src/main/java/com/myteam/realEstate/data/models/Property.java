@@ -1,19 +1,24 @@
 package com.myteam.realEstate.data.models;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "properties")
-@Data
+@Getter
+@Setter
 public class Property {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
-    private int agentId;
+    @ManyToOne
+    private User agent;
+    @ManyToOne(optional = false)
+    private User owner;
     private String title;
     private double price;
-    private boolean isAvailable;
+    private boolean available;
 
 }
 
