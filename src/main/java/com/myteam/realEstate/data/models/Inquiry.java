@@ -10,15 +10,16 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Inquiry {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int propertyId;
-    private int buyerId;
+    @ManyToOne(optional = false)
+    private Property property;
+    @ManyToOne(optional = false)
+    private User buyer;
     private String message;
     @Enumerated(EnumType.STRING)
     private Status status;
-
 
 
 }

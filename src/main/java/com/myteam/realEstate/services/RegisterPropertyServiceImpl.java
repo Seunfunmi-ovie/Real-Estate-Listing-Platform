@@ -5,7 +5,7 @@ import com.myteam.realEstate.data.models.User;
 import com.myteam.realEstate.data.repositories.PropertyRepository;
 import com.myteam.realEstate.data.repositories.UserRepository;
 import com.myteam.realEstate.dtos.requests.RegisterPropertyRequest;
-import com.myteam.realEstate.dtos.requests.RemovePropertyRequest;
+
 import com.myteam.realEstate.dtos.requests.UpdatePropertyRequest;
 import com.myteam.realEstate.dtos.responses.RegisterPropertyResponse;
 import com.myteam.realEstate.dtos.responses.RemovePropertyResponse;
